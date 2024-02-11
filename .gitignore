@@ -13,6 +13,9 @@
 # Screenshots
 ./cypress/screenshots
 
+# Reports
+./cypress/reports
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 

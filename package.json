@@ -1,0 +1,25 @@
+{
+  "name": "cypresstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^13.6.4",
+    "cypress-xpath": "^2.0.1",
+    "typescript": "^5.3.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-report.html"
+    }
+  }
+}

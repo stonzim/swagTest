@@ -18,12 +18,12 @@ When(/^User puts the lowest priced item in the cart$/, function () {
     });
 });
 
-When(/^User put the highest priced item in the cart$/, function () {
+When(/^User puts the highest priced item in the cart$/, function () {
     cy.getIndexes().then($indexes => {
         cy.xpath(`(//div[@class="inventory_item_price"]/following-sibling::button)[${$indexes[1]}]`).click();
     });
 });
 
-Then(/^The cart will have the correct number of items in it displayed$/, function () {
+Then(/^The cart will display the correct number of items in it$/, function () {
     cy.get('#shopping_cart_container>a').scrollIntoView().should('have.text', '2');
 });
